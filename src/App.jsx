@@ -1,21 +1,18 @@
-import Footer from "./Components/Footer/Footer"
-import VideoGrid from "./Components/Grid/VideoGrid"
-import Navbar from "./Components/Navbar/Navbar"
-import Video from "./Components/Pages/Video/Video"
-import Tags from "./Components/Tags/Tags"
-import Pagination from "./Components/ui/Pagination/Pagination"
 
+import Home from "./Components/Pages/Home/Home"
+import Video from "./Components/Pages/Video/Video"
+
+import { Routes, Route, Navigate } from 'react-router-dom';
 function App() {
   
 
   return (
     <>
-     <Navbar/>
-     <Tags/>
-     <VideoGrid/>
-     <Pagination/>
-     <Footer/>
-     <Video/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/videos/:videoId" element={<Video />} />
+        
+      </Routes>
     </>
   )
 }
