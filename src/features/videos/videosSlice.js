@@ -1,7 +1,7 @@
-import { getVideos } from "./videosAPI";
+import { getVideos } from "./videosApi";
 
-const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
-
+//const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const initialState = {
     videos: [],
     isLoading: false,
