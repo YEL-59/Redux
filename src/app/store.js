@@ -1,9 +1,9 @@
 
 import { configureStore } from "@reduxjs/toolkit";
-import videosReducer from "../features/videos/videosSlice";
+import transactionReducer from "../features/Transaction/transactionSlice";
 
 export const store = configureStore({
     reducer: {
-        videos: videosReducer,
+        transaction: transactionReducer,
     },
 });
